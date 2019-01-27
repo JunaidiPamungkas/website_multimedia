@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/** Opening **/
+
+article .intro h1 {
+    padding: 0px 12px 100px 12px;
+    font-size: 5vw;
+    font-style: italic;
+    text-decoration: underline #0ee0e0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #70308d;
+}
+
+article .intro h2 {
+    color: #005858;
+}
+
+article .intro h3 {
+    font-family: ubuntu;
+    color: #005858;
+    border-bottom: 2px solid #005858;
+    margin-bottom: 50px;
+    padding-bottom: 12px;
+}
+
+
+/** Layout **/
+.grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    box-sizing: border-box;
+}
+
+.column-left {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.column-right {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    /* box-sizing: border-box; */
+
+}
+
+/** Styling **/
+.sidebar {
+    position: sticky;
+    background-color: #005858;
+    border-right: 1px solid rgb(53, 53, 53);
+}
+
+.page-logo>img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+    /* border-radius: 50%; */
+}
+
+.primary-nav>ul {
+    width: 100%;
+    height: auto;
+    display: block;
+    list-style: none;
+}
+
+.primary-nav>ul>li {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 200;
+}
+
+.primary-nav>ul>li>a {
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 3px;
+}
+
+.primary-nav>ul>li>a:hover {
+    font-size: 1.3rem;
+    transition: font-size 0.2s;
+    border-bottom: none;
+    box-shadow: 1px 1px 1px #2b2b2b;
+    background: #ffffff;
+    color: #005858;
+    border-radius: 10px;
+}
+
+.page-body {
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+
+.page-content {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    color: #2b2b2b;
+    font-family: Ubuntu;
+    color: #005858;
+}
+
+.form-group>label {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.form-group>[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #005858;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.form-group>[type="text"]:focus {
+    color: #005858;
+    border: none;
+    border-bottom: 2px solid #005858;
+    /* transition: border 0.5s; */
+}
+
+.form-group>select{
+    background: white;
+    border: 1px solid #bdbdbd;
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #005858;
+}
+
+.form-group>[type="radio"]{
+    margin-top: 0.2rem;
+    color: #005858;
+}
+
+.form-group>textarea{
+    color: #005858;
+}
+
+.form-group>[type="submit"]{
+    width: 100%;
+    color: #fffafa;
+    background: #005858;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: ubuntu;
+}
+
+.form-group>[type="submit"]:hover{
+    background: #064b4b;
+}
+
+.form-group>[type="tel"]{
+    color: #005858;
+    border: none;
+    border-bottom: 1px solid #005858;
+}
+
+.form-group>[type="date"]{
+    color: #005858;
+    border: none;
+    border-bottom: 1px solid #005858;
+}
+
+.form-group>[type="time"]{
+    color: #005858;
+    border: none;
+    border-bottom: 1px solid #005858;
+}
+
+.form-group>[type="color"]{
+    color: #005858;
+    border: none;
+    border-bottom: 1px solid #005858;
+}
+
+.form-group>[type="file"]{
+    color: #005858;
+    border: none;
+    border-bottom: 1px solid #005858;
+}
+
+@media (max-width : 900px ) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+
+    .column-left {
+        height: auto;
+    }
+
+    .page-logo>img {
+        margin-bottom: 10px;
+    }
+
+    .column-right {
+        height: auto;
+        overflow-x: none;
+    }
+}
