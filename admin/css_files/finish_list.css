@@ -12,7 +12,7 @@
     padding: 18px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 5px 5px rgba(0,0,0, .5);
 }
 
 .word-top img {
@@ -27,6 +27,9 @@
     margin: none;
     padding: 12px;
     text-decoration: none;
+    border-radius: 6px;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
 }
 
 a:hover {
@@ -34,7 +37,7 @@ a:hover {
     background-color: #037362;
     border-radius: 6px;
     transition: background-color 0.3s;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 5px 5px rgba(0,0,0, .3);
 }
 
 nav.primary-nav {
@@ -90,4 +93,3 @@ footer {
     height: 30px;
     padding: 5px;
 }
-
