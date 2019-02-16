@@ -5,25 +5,8 @@
 
 /** Opening **/
 
-article .intro h1 {
-    padding: 0px 12px 100px 12px;
-    font-size: 5vw;
-    font-style: italic;
-    text-decoration: underline #0ee0e0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #70308d;
-}
-
-article .intro h2 {
-    color: #005858;
-}
-
-article .intro h3 {
-    font-family: ubuntu;
-    color: #005858;
-    border-bottom: 2px solid #005858;
-    margin-bottom: 50px;
-    padding-bottom: 12px;
+.intro {
+  color: #fff;
 }
 
 
@@ -46,7 +29,7 @@ article .intro h3 {
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 
 }
 
@@ -103,7 +86,7 @@ article .intro h3 {
 
 .page-body {
     background-color: white;
-    padding: 50px;
+    padding: 0 20px;
     box-sizing: border-box;
 
 }
@@ -114,11 +97,41 @@ article .intro h3 {
     text-align: center;
 }
 
+article {
+  padding: 3rem 3rem;
+}
+
+article p {
+  color: #005858;
+  font-weight: 600;
+}
+
+.customer-form {
+  background-color: rgba(233, 233, 233, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 7px #eee;
+}
+
 .form-group {
     margin-bottom: 40px;
     color: #2b2b2b;
     font-family: Ubuntu;
     color: #005858;
+    padding: 10px
+}
+
+.form-group input{
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-group textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 .form-group>label {
@@ -167,17 +180,18 @@ article .intro h3 {
 }
 
 .form-group>[type="submit"]{
-    width: 100%;
+    width: 50%;
     color: #fffafa;
     background: #005858;
-    height: 30px;
-    box-sizing: border-box;
-    border-radius: 12px;
+    border-radius: 10px;
     font-family: ubuntu;
+    border: none;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-group>[type="submit"]:hover{
     background: #064b4b;
+    cursor: pointer;
 }
 
 .form-group>[type="tel"]{
@@ -201,16 +215,61 @@ article .intro h3 {
 .form-group>[type="color"]{
     color: #005858;
     border: none;
-    border-bottom: 1px solid #005858;
+    padding: 0!important;
+    border-radius: 5px;
 }
 
 .form-group>[type="file"]{
     color: #005858;
     border: none;
-    border-bottom: 1px solid #005858;
 }
 
-@media (max-width : 900px ) {
+.navbar {
+  background-color: #005858!important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  box-shadow: 0 5px 7px rgba(51, 51, 51, .2);
+}
+
+.navbar ul li a {
+  color: #fff;
+  transition: .3s;
+  position: relative;
+  margin: auto 5px;
+  padding: 17px 5px;
+}
+
+.navbar ul li a:hover {
+  color: #005858;
+}
+
+.navbar ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #fff;
+  transition: .5s;
+  z-index: -1;
+}
+
+.navbar ul li a:hover::before{
+  height: 100%;
+}
+
+.navbar-toggler {
+  border: 1px solid #fff!important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.navbar-toggler-icon {
+  background-image: url('../images/toggler-menu.svg')!important;
+  transform: rotate(180deg);
+}
+
+@media (max-width : 768px ) {
     .grid-container {
         grid-template-columns: 100%;
     }
@@ -225,6 +284,11 @@ article .intro h3 {
 
     .column-right {
         height: auto;
-        overflow-x: none;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    article {
+      padding: 20px 25px!important;
     }
 }

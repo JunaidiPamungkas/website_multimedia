@@ -13,161 +13,178 @@
 
 <body>
     <div class="grid-container">
-        <div class="column-left sidebar">
-            <header>
-                <div class="page-logo">
-                        <img src="../images/pm.jpg" alt="pondok multimedia">
-                </div>
-                <nav class="primary-nav">
-                    <ul>
-                        <li><a href="#home" target="_self">Home</a></li>
-                        <li><a href="https://pondokmultimedia.com/" target="_blank">Galeri Multimedia</a></li>
-                        <li><a href="https://pondokit.com/" target="_blank">Tentang Pondok IT</a></li>
-                        <li><a href="https://bikinweb.pondokprogrammer.com/" target="_blank">Jasa Pembuatan Website</a></li>
-                        <li><a href="https://kakakasuhindonesia.org/" target="_blank">Kakak Asuh Indonesia</a></li>
-                            <!-- Button trigger modal -->
-                            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Klik Disini
-                            </button> -->
-
-                            <!-- Modal -->
-                            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Apakah anda sudah pernah memesan sebelumnya?</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="page.php">
-                                                <div class="form-division">
-                                                <label for="orderID">Masukkan nomor order anda!</label>
-                                                <input type="text" class="form-control" id="orderID">
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                    </ul>
-                </nav>
-            </header>
+      <div class="column-left sidebar">
+        <header>
+            <div class="page-logo">
+                    <img class="img-fluid" src="../images/pm.jpg" alt="pondok multimedia">
+            </div>
+            <div class="intro px-3">
+                <h5 class="mt-2">Design Gratis</h5>
+                <h5>اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ</h5>
+                <h6>Website ini melayani permintaan untuk pembuatan design poster gratis untuk kegiatan kajian agama Islam.
+                    Dengan tujuan mempermudah saudara-saudari yang ingin mempelajari agama Islam juga sebagai bentuk kontribusi yang dapat
+                    kami lakukan terhadap umat Islam.
+                </h6>
+            </div>
+          </header>
         </div>
-        <div class="column-right page-body">
-            <div class="page-content">
-                <article>
-                    <div class="intro">
-                        <h1>Design Gratis</h1>
-                        <h2>اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ</h2><br />
-                        <h3>Website ini melayani permintaan untuk pembuatan design poster gratis untuk kegiatan kajian agama Islam.
-                            Dengan tujuan mempermudah saudara-saudari yang ingin mempelajari agama Islam juga sebagai bentuk kontribusi yang dapat
-                            kami lakukan terhadap umat Islam.
-                        </h3><br /><br />
-                    </div>
-                    <form>
-                        <div class="form-group">
-                            <label for="name"><i class="fas fa-user"><span style="font-family:ubuntu;"> Nama Pemesan?</span></i></label>
-                            <input type="text" name="name" id="name" placeholder="cth. Rifqi">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact"><i class="fas fa-phone"></i><span style="font-family:ubuntu;"> Nomor Telepon?</span></label>
-                            <input type="tel" name="contact" id="contact" placeholder="cth. +62 822 1448 XXXX">
-                        </div>
-                        <div class="form-group">
-                            <label for="size"><i class="fas fa-scroll"><span style="font-family:ubuntu;"> Size / ukuran poster yang diinginkan?</span></i></label>
-                            <input type="radio" name="size" id="square" checked>Square/1:1</input>
-                            <input type="radio" name="size" id="resume">Resume/A4</input>
-                        </div>
-                        <div class="form-group">
-                            <label for="color"><i class="fas fa-palette"><span style="font-family:ubuntu;"> Warna dasar yang diinginkan? Click Dibawah</i></span></i></label>
-                            <input type="color" name="color" id="color">
-                        </div>
-                        <div class="form-group">
-                            <label for="image"><i class="fas fa-image"><span style="font-family:ubuntu;"> Adakah gambar yang ingin ditambahkan?</span></i></label>
-                            <input type="file" name="image" id="image">
-                        </div>
-                        <div class="form-group">
-                            <label for="category"><i class="fas fa-book-open"><span style="font-family:ubuntu;"> Jenis kajian yang akan diadakan?</span></i></label>
-                            <select>
-                                <option value="daily">Kajian Rutin</option>
-                                <option value="theme">Kajian Tematik</option>
-                                <option value="most-big">Kajian Akbar</option>
-                                <option value="safari">Safari Dakwah</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="audience"><i class="fas fa-book-reader"><span style="font-family:ubuntu;"> Informasi tentang jamaah?</span></i></label>
-                            <textarea placeholder="cth. dihadiri 3000 jamaah" cols="50" rows="10"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="title"><i class="fab fa-elementor"><span style="font-family:ubuntu;"> Judul kajian?</span></i></label>
-                            <input type="text" name="title" id="title" placeholder="cth. Akhlak dan Adab">
-                        </div>
-                        <div class="form-group">
-                            <label for="tagline"><i class="fas fa-tags"><span style="font-family:ubuntu;"> Tagline dari kajian?</span></i></label>
-                            <input type="text" name="tagline" id="tagline" placeholder="cth. Membangun umat dengan akhlak">
-                        </div>
-                        <div class="form-group">
-                            <label for="teacher"><i class="fas fa-chalkboard-teacher"><span style="font-family:ubuntu;"> Ustadz yang mengisi kajian?</span></i></label>
-                            <input type="text" name="teacher" id="teacher" placeholder="cth. Ustadz Subhan Bawazier ,Lc.">
-                        </div>
-                        <div class="form-group">
-                            <label for="book"><i class="fas fa-book"><span style="font-family:ubuntu;"> Nama kitab yang dibahas?</span></i></label>
-                            <input type="text" name="book" id="book" placeholder="cth. Kitab Riyadhus Sholihin">
-                        </div>
-                        <div class="form-group">
-                            <label for="place"><i class="fas fa-place-of-worship"><span style="font-family:ubuntu;"> Tempat kajian?</span></i></label>
-                            <input type="text" name="place" id="place" placeholder="cth. Masjid Alhusna, Desa Tirtohargo, Kecamatan Kretek, Kabupaten Bantul">
-                        </div>
-                        <div class="form-group">
-                            <label for="date"><i class="fas fa-calendar"><span style="font-family:ubuntu;"> Tanggal kajian?</span></i></label>
-                            <input type="date" name="date" id="date">
-                        </div>
-                        <div class="form-group">
-                            <label for="time"><i class="fas fa-clock"><span style="font-family:ubuntu;"> Pukul berapa kajian dilaksanakan?</span></i></label>
-                            <input type="time" name="time" id="time">
-                        </div>
-                        <div class="form-group">
-                            <label for="eo"><i class="fas fa-tools"><span style="font-family:ubuntu;"> Event Organizer kajian?</span></i></label>
-                            <input type="text" name="eo" id="eo" placeholder="cth. Remaja Masjid">
-                        </div>
-                        <div class="form-group">
-                            <label for="telephone"><i class="fas fa-phone-square"><span style="font-family:ubuntu;"> Kontak kajian yang bisa dihubungi?</span></i></label>
-                            <input type="tel" name="telephone" id="telephone" placeholder="cth. +62 822 1448 XXXX">
-                        </div>
-                        <div class="form-group">
-                            <label for="donate"><i class="fas fa-tools"><span style="font-family:ubuntu;"> Event Organizer kajian?</span></i></label>
-                            <input type="text" name="eo" id="eo" placeholder="cth. Remaja Masjid">
-                        </div>
-                        <div class="form-group">
-                            <label for="donate"><i class="fas fa-donate"><span style="font-family:ubuntu;"> Adakah informasi tentang donasi?</span></i></label>
-                            <input type="text" name="donate" id="donate" placeholder="cth. BRI Syariah:1234567890-Muhammad Jaed">
-                        </div>
-                        <div class="form-group ">
-                            <label for="fasting"><i class="fas fa-utensils"><span style="font-family:ubuntu;"> Disediakan menu buka puasa?</span></i></label>
-                            <input type="radio" name="fasting" id="ya" checked>Ya, disediakan</input>
-                            <input type="radio" name="fasting" id="no">Tidak ada</input>
-                        </div>
-                        <div class="form-group">
-                            <label for="stream"><i class="fas fa-tv"><span style="font-family:ubuntu;"> Apakah ada streaming online?</span></i></label>
-                            <input type="radio" name="stream" id="ya" checked>Ya, ada</input>
-                            <input type="radio" name="stream" id="tidak">Tidak ada</input>
-                        </div>
-                        <div class="form-group">
-                            <label for="info"><i class="fas fa-info-circle"><span style="font-family:ubuntu;"> Adakah info tambahan?</span></i></label>
-                            <textarea placeholder="cth. Diharap tidak membawa jajanan dari luar" cols="50" rows="10"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="sbmt" id="sbmt" value="SUBMIT">
-                        </div>
-                    </form>
-                </article>
-                </div>
+
+        <div class="column-right">
+          <nav class="navbar navbar-expand-lg sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galeri Multimedia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tentang Pondok IT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jasa Pembuatan Website</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kakak Asuh Indonesia</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <article>
+            <p class="lead text-center">Jika anda ingin mengajukan pembuatan poster gratis silahkan isi formulir di bawah ini.</p>
+              <form class="customer-form">
+                  <div class="form-group">
+                      <label for="name"><i class="fas fa-user"><span class="ml-2" style="font-family:ubuntu;"> Nama Pemesan?</span></i></label>
+                      <input type="text" name="name" id="name" placeholder="cth. Rifqi">
+                  </div>
+                  <div class="form-group">
+                      <label for="contact"><i class="fas fa-phone"></i><span class="ml-2" style="font-family:ubuntu;"> Nomor Telepon?</span></label>
+                      <input type="tel" name="contact" id="contact" placeholder="cth. +62 822 1448 XXXX">
+                  </div>
+                  <div class="form-group">
+                      <label for="size"><i class="fas fa-scroll"><span class="ml-2" style="font-family:ubuntu;"> Size / ukuran poster yang diinginkan?</span></i></label>
+                      <!-- Size option -->
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">Square</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">1:1 Resume</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline3">A4</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline4">Poster</label>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="color"><i class="fas fa-palette"><span class="ml-2" style="font-family:ubuntu;"> Warna dasar yang diinginkan? Click Dibawah</i></span></i></label>
+                      <input type="color" name="color" id="color">
+                  </div>
+                  <div class="form-group">
+                      <label for="image"><i class="fas fa-image"><span class="ml-2" style="font-family:ubuntu;"> Adakah gambar yang ingin ditambahkan?</span></i></label>
+                      <input type="file" name="image" id="image">
+                  </div>
+                  <div class="form-group">
+                      <label for="category"><i class="fas fa-book-open"><span class="ml-2" style="font-family:ubuntu;"> Jenis kajian yang akan diadakan?</span></i></label>
+                      <select>
+                          <option value="daily">Kajian Rutin</option>
+                          <option value="theme">Kajian Tematik</option>
+                          <option value="most-big">Kajian Akbar</option>
+                          <option value="safari">Safari Dakwah</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="audience"><i class="fas fa-book-reader"><span class="ml-2" style="font-family:ubuntu;"> Informasi tentang jamaah?</span></i></label>
+                      <textarea placeholder="cth. dihadiri 3000 jamaah" cols="50" rows="10"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <label for="title"><i class="fab fa-elementor"><span class="ml-2" style="font-family:ubuntu;"> Judul kajian?</span></i></label>
+                      <input type="text" name="title" id="title" placeholder="cth. Akhlak dan Adab">
+                  </div>
+                  <div class="form-group">
+                      <label for="tagline"><i class="fas fa-tags"><span class="ml-2" style="font-family:ubuntu;"> Tagline dari kajian?</span></i></label>
+                      <input type="text" name="tagline" id="tagline" placeholder="cth. Membangun umat dengan akhlak">
+                  </div>
+                  <div class="form-group">
+                      <label for="teacher"><i class="fas fa-chalkboard-teacher"><span class="ml-2" style="font-family:ubuntu;"> Ustadz yang mengisi kajian?</span></i></label>
+                      <input type="text" name="teacher" id="teacher" placeholder="cth. Ustadz Subhan Bawazier ,Lc.">
+                  </div>
+                  <div class="form-group">
+                      <label for="book"><i class="fas fa-book"><span class="ml-2" style="font-family:ubuntu;"> Nama kitab yang dibahas?</span></i></label>
+                      <input type="text" name="book" id="book" placeholder="cth. Kitab Riyadhus Sholihin">
+                  </div>
+                  <div class="form-group">
+                      <label for="place"><i class="fas fa-place-of-worship"><span class="ml-2" style="font-family:ubuntu;"> Tempat kajian?</span></i></label>
+                      <input type="text" name="place" id="place" placeholder="cth. Masjid Alhusna, Desa Tirtohargo, Kecamatan Kretek, Kabupaten Bantul">
+                  </div>
+                  <div class="form-group">
+                      <label for="date"><i class="fas fa-calendar"><span class="ml-2" style="font-family:ubuntu;"> Tanggal kajian?</span></i></label>
+                      <input type="date" name="date" id="date">
+                  </div>
+                  <div class="form-group">
+                      <label for="time"><i class="fas fa-clock"><span class="ml-2" style="font-family:ubuntu;"> Pukul berapa kajian dilaksanakan?</span></i></label>
+                      <input type="time" name="time" id="time">
+                  </div>
+                  <div class="form-group">
+                      <label for="eo"><i class="fas fa-tools"><span class="ml-2" style="font-family:ubuntu;"> Event Organizer kajian?</span></i></label>
+                      <input type="text" name="eo" id="eo" placeholder="cth. Remaja Masjid">
+                  </div>
+                  <div class="form-group">
+                      <label for="telephone"><i class="fas fa-phone-square"><span class="ml-2" style="font-family:ubuntu;"> Kontak kajian yang bisa dihubungi?</span></i></label>
+                      <input type="tel" name="telephone" id="telephone" placeholder="cth. +62 822 1448 XXXX">
+                  </div>
+                  <div class="form-group">
+                      <label for="donate"><i class="fas fa-tools"><span class="ml-2" style="font-family:ubuntu;"> Event Organizer kajian?</span></i></label>
+                      <input type="text" name="eo" id="eo" placeholder="cth. Remaja Masjid">
+                  </div>
+                  <div class="form-group">
+                      <label for="donate"><i class="fas fa-donate"><span class="ml-2" style="font-family:ubuntu;"> Adakah informasi tentang donasi?</span></i></label>
+                      <input type="text" name="donate" id="donate" placeholder="cth. BRI Syariah:1234567890-Muhammad Jaed">
+                  </div>
+                  <div class="form-group ">
+                      <label for="fasting"><i class="fas fa-utensils"><span class="ml-2" style="font-family:ubuntu;"> Disediakan menu buka puasa?</span></i></label>
+
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline4">Ya, disediakan</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline5">Tidak</label>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="stream"><i class="fas fa-tv"><span class="ml-2" style="font-family:ubuntu;"> Apakah ada streaming online?</span></i></label>
+
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline6" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline6">Ya, Ada</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline7" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline7">Tidak Ada</label>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="info"><i class="fas fa-info-circle"><span class="ml-2" style="font-family:ubuntu;"> Adakah pesan tambahan untuk desainer?</span></i></label>
+                      <textarea placeholder="cth. Diharap tidak membawa jajanan dari luar" cols="50" rows="10"></textarea>
+                  </div>
+                  <div class="form-group text-center">
+                      <input type="submit" name="sbmt" id="sbmt" value="SUBMIT">
+                  </div>
+                </form>
+              </article>
             </div>
         </div>
     </div>
